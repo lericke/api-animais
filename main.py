@@ -40,7 +40,8 @@ def remove_animal(animal_id: int):
         return "Animal removido com sucesso"
     else:
         return "Animal não encontrado"
-
+    
+#Registrar um novo animal 
 @app.post('/animais')
 def create_animal(animal: Animal):
     data_base.append(animal)
